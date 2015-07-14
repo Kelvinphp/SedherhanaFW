@@ -1,0 +1,11 @@
+<?php
+
+    namespace app\Models;
+    
+    abstract class BaseModel {
+        public static function getDB() {
+            return new \PDO("mysql:host=localhost;dbname=framework",
+                	  "root","");
+        }
+    }
+
